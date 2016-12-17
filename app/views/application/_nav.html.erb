@@ -4,7 +4,7 @@
           <li><%= link_to 'Login', new_user_session_path %></li>
           <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></a></li>
           <li><%= link_to 'Google', user_google_oauth2_omniauth_authorize_path %></li>
-  <li><a href="#">Two</a></li>
+  <li><%= link_to 'Calendar', google_calendar_path %></li>
   <li><a href="#">Three</a></li>
   <li><a href="#">Four</a></li>
 </ul>

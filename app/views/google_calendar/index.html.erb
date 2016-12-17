@@ -6,6 +6,11 @@
 </p>
 <p>
 <% @event_list['items'].each do |event| %>
-<strong><%= event['summary'] %></strong> | <%= event['created'].to_datetime.strftime('%A, %B %e, %Y %I:%M %P') %><br>
+<strong><%= event['summary'] %></strong> |
+<% if event['start']['date'].nil? %>
+  <%= event['start']['dateTime'].to_datetime.strftime('%B %e, %Y at %I:%M %P') %><br>
+<% else %>
+  <%= event['start']['date'].to_datetime.strftime('%B %e, %Y') %><br>
+<% end %>
 <% end %>
 </p>
