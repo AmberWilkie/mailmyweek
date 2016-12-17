@@ -12,8 +12,9 @@ require "sprockets/railtie"
 
 Bundler.require(*Rails.groups)
 
-module BlankRailsScaffold
+module MailMyWeek
   class Application < Rails::Application
+    config.active_job.queue_adapter = :sidekiq
     config.generators do |generate|
       generate.helper false
       generate.assets false
