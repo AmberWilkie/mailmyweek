@@ -1,0 +1,5 @@
+http://stackoverflow.com/questions/4313177/sending-mail-with-rails-3-in-development-environment
+http://www.thegreatcodeadventure.com/using-the-google-api-ruby-client-with-google-calendar-api/
+https://github.com/zquestz/omniauth-google-oauth2
+http://landonmarder.com/posts/2014/06/04/google-cal-rails/
+https://developers.google.com/google-apps/calendar/concepts/#events_resource
