@@ -6,7 +6,6 @@ class GoogleCalendarWrapper
 
   def configure_client(current_user)
     @client = Google::APIClient.new
-    binding.pry
     @client.authorization.access_token = current_user.token
     # @client.authorization.refresh_token = current_user.refresh_token
     @client.authorization.client_id = ENV['GOOGLE_CLIENT_ID']
