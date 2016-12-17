@@ -1,5 +1,6 @@
 class GoogleCalendarController < ApplicationController
   def index
+    CalendarMailer.calendar_email(current_user).deliver_now
     @calendar = GoogleCalendarWrapper.new(current_user)
     @list = @calendar.get_calendar_list
     @calendars = JSON.parse @list.response.env.body

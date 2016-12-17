@@ -12,7 +12,7 @@ require "sprockets/railtie"
 
 Bundler.require(*Rails.groups)
 
-module BlankRailsScaffold
+module MailMyWeek
   class Application < Rails::Application
     config.generators do |generate|
       generate.helper false
