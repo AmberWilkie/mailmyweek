@@ -1,22 +1,10 @@
-<div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
-  <button class="menu-icon" type="button" data-toggle></button>
-  <div class="title-bar-title">Menu</div>
-</div>
+<! -- Make this prettier late with https://zurb.com/university/lessons/how-to-re-create-top-bar-with-foundation-6 -->
+<ul class="dropdown menu" data-dropdown-menu>
 
-<div class="top-bar" id="example-animated-menu" data-animate="hinge-in-from-top spin-out">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu>
-      <li class="menu-text">Site Title</li>
-      <li>
-        <a href="#">Session</a>
-        <ul class="menu vertical">
           <li><%= link_to 'Login', new_user_session_path %></li>
           <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></a></li>
           <li><a href="#">Google</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Two</a></li>
-      <li><a href="#">Three</a></li>
-    </ul>
-  </div>
-</div>
+  <li><a href="#">Two</a></li>
+  <li><a href="#">Three</a></li>
+  <li><a href="#">Four</a></li>
+</ul>
