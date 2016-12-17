@@ -4,3 +4,8 @@
       <%= calendar['summary'] %><br>
    <% end %>
 </p>
+<p>
+<% @event_list['items'].each do |event| %>
+<strong><%= event['summary'] %></strong> | <%= event['created'].to_datetime.strftime('%A, %B %e, %Y %I:%M %P') %><br>
+<% end %>
+</p>

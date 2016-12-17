@@ -17,4 +17,12 @@ class GoogleCalendarWrapper
   def get_calendar_list
     @client.execute(api_method: @service.calendar_list.list)
   end
+
+  def get_calendar_event(cal_id)
+    response = @client.execute(api_method: @service.events.list,
+                               parameters: { 'calendarId' => cal_id,
+                                             timeMin: Date.today.rfc3339,
+                                             timeMax: (Date.today + 7.days).rfc3339 },
+                               headers: { 'Content-Type' => 'application/json' })
+  end
 end
