@@ -3,11 +3,11 @@
 A simple app that would log you into Google, grab your Google calendars. You'd select which calendars you want to include, then it emails you once a week on Sunday afternoon (or whenever) to tell you what's going on that week.
 
 ### What I've got so far
-I worked on this for most of a Saturday, Dec. 17, 2016. I:
+I worked on this for most of Saturday, Dec. 17, 2016.
 - Scaffolded the app and set up databases
 - Added Devise user authentication and User model
 - Configured oauth login with Google
-- Connected with the GCal API - extracing a list of calendars and a list of events for one particular calendar - depending on who is logged into with Google oauth. Displayed that data on a page.
+- Connected with the GCal API - extracting a list of calendars and a list of events for one particular calendar - depending on who is logged into with Google oauth. Displayed that data on a page.
 
 ### To Do
 - Set up ActionMailer. I might have gotten most of the way (I am seeing the html format and to/from in the logs) but I think ActionMailer won't actually send anything in test/development.
@@ -22,9 +22,9 @@ I worked on this for most of a Saturday, Dec. 17, 2016. I:
 - Google Calendar API (see Google Developer Console)
 
 ### Resources
-http://stackoverflow.com/questions/4313177/sending-mail-with-rails-3-in-development-environment
-http://www.thegreatcodeadventure.com/using-the-google-api-ruby-client-with-google-calendar-api/
-https://github.com/zquestz/omniauth-google-oauth2
-http://landonmarder.com/posts/2014/06/04/google-cal-rails/
-https://developers.google.com/google-apps/calendar/concepts/#events_resource
+http://stackoverflow.com/questions/4313177/sending-mail-with-rails-3-in-development-environment    
+http://www.thegreatcodeadventure.com/using-the-google-api-ruby-client-with-google-calendar-api/    
+https://github.com/zquestz/omniauth-google-oauth2    
+http://landonmarder.com/posts/2014/06/04/google-cal-rails/    
+https://developers.google.com/google-apps/calendar/concepts/#events_resource    
 http://nithinbekal.com/posts/rails-recurring-events/
